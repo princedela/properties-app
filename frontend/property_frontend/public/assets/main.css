@@ -1,0 +1,11 @@
+*,
+*::before,
+*::after {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+.login {
+  background: url("/assets/images/realestate.png");
+  background-size: cover;
+  background-position: left;
+}
