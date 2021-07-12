@@ -1,4 +1,4 @@
-import "./login.css";
+import "./auth.css";
 import React, { useState } from "react";
 import building_logo from "../../assets/house_colour.svg";
 import TextField from "../FormControls/TextField";
@@ -12,12 +12,11 @@ export default function Login({}) {
   }
   return (
     <div className="login">
-      {" "}
       <div className="login-container">
         <section className="banner-overlay"></section>
         <section className="form-section">
-          <p className="form-title">Find your dream home</p>
           <div className="form-flex">
+            <p className="form-title">Find your dream home</p>
             <img className="building" alt="building" src={building_logo} />
             <form>
               <TextField
