@@ -4,8 +4,20 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
 }
+* {
+  font-size: 1rem;
+}
 .login {
   background: url("/assets/images/realestate.png");
   background-size: cover;
   background-position: left;
+}
+
+@media only screen and (max-width: 900px) {
+}
+
+@media only screen and (max-width: 400px) {
+  * {
+    font-size: 0.85rem;
+  }
 }

@@ -13,12 +13,18 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 .form-section {
+  height: 100%;
+  background-color: white;
+  padding: 50px;
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  justify-content: space-between;
+}
+.form-flex {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white;
 }
 .login p {
   color: #9a9999;
@@ -32,17 +38,15 @@ a:visited {
 }
 p.copyright {
   color: #cd730c;
-  position: absolute;
-  bottom: 40px;
+  text-align: center;
   font-weight: 600;
   font-size: 0.8rem;
 }
 p.form-title {
   color: #9a9999;
-
   text-transform: uppercase;
   margin-bottom: 5px;
-  font-weight: 400;
+  font-weight: 600;
   font-family: "Segoe UI";
   font-size: 1.2rem;
   text-align: center;
@@ -78,7 +82,10 @@ p.form-title {
   margin-bottom: 15px;
   font-weight: 500;
 }
-
+.login form {
+  width: 100%;
+  max-width: 250px;
+}
 @media only screen and (max-width: 900px) {
   .login-container {
     grid-template-columns: 0 1fr;
@@ -96,5 +103,11 @@ p.form-title {
   }
   .login {
     background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .login {
+    background-position: center;
   }
 }

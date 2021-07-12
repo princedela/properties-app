@@ -7,6 +7,7 @@ export default function TextField({
   classess = "",
   placeholder = "",
   onchange = () => {},
+  ...rest
 }) {
   return (
     <div className="form-control">
@@ -17,6 +18,7 @@ export default function TextField({
         onChange={onchange}
         className={classess}
         placeholder={placeholder}
+        {...rest}
       />
     </div>
   );
