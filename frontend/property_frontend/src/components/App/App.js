@@ -2,21 +2,25 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "../Auth/Login";
 import Register from "../Auth/Register";
+import Ads from "../Home/Ads";
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <div className="app">
-          <Route path="/login">
+    <div className="app">
+      <Router>
+        <Switch>
+          <Route exact path="/login">
             <Login />
           </Route>
-          <Route path="/register">
+          <Route exact path="/register">
             <Register />
           </Route>
-        </div>
-      </Switch>
-    </Router>
+          <Route exact path="/">
+            <Ads />
+          </Route>
+        </Switch>
+      </Router>
+    </div>
   );
 }
 

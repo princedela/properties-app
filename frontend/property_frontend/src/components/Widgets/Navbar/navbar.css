@@ -1,0 +1,29 @@
+.navbar {
+  height: 60px;
+  background-color: #cd730c;
+  color: white;
+}
+
+.nav-container {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+  list-style: none;
+}
+
+.nav-item a,
+.nav-item a:visited {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
