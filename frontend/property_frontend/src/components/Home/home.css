@@ -3,3 +3,25 @@
   max-width: 900px;
   margin: auto;
 }
+
+input.search {
+  height: 34px;
+  width: 200px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+button.icon-btn {
+  background-color: #cd730c;
+  height: 34px;
+  width: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+button.icon-btn img {
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}

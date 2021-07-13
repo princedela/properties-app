@@ -20,6 +20,10 @@
   background-repeat: no-repeat;
 }
 
+.search-box {
+  display: flex;
+  gap: 0;
+}
 @media only screen and (max-width: 900px) {
 }
 
