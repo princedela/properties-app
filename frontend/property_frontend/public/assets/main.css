@@ -13,6 +13,13 @@
   background-position: left;
 }
 
+.banner {
+  background: url("/assets/images/realestate.png");
+  background-position: center;
+  background-size: 100% 300%;
+  background-repeat: no-repeat;
+}
+
 @media only screen and (max-width: 900px) {
 }
 
