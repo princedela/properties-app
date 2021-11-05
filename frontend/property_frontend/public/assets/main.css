@@ -24,11 +24,37 @@
   display: flex;
   gap: 0;
 }
+.mob-search {
+  /* position: absolute; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background-color: #ebebeb;
+  top: -100px;
+  transition-property: top;
+  transition-duration: 0.6s;
+  position: fixed;
+  z-index: 500;
+}
+.search-box .search-box {
+  width: fit-content;
+}
+.mob-search.visible {
+  top: 0px;
+}
+.mob-search .search {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
 @media only screen and (max-width: 900px) {
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 700px) {
   * {
     font-size: 0.85rem;
+  }
+  .banner {
+    background-size: cover;
   }
 }

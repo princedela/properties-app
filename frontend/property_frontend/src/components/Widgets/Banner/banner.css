@@ -14,3 +14,24 @@
   gap: 12px;
   color: white;
 }
+
+.banner-overlay p {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 700px) {
+  .banner-overlay {
+    gap: 6px;
+  }
+  .banner-overlay p {
+    margin: 3px 7px;
+    text-transform: none;
+  }
+  .banner .search-box {
+    position: sticky;
+  }
+  .banner {
+    height: 22vh;
+  }
+}
