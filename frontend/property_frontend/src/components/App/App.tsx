@@ -1,9 +1,9 @@
-import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "../Auth/Login";
 import Register from "../Auth/Register";
-import Ads from "../Home/Ads";
+
+import Page from "../Page/Page";
 
 function App() {
   return (
@@ -16,9 +16,7 @@ function App() {
           <Route exact path="/register">
             <Register />
           </Route>
-          <Route exact path="/">
-            <Ads />
-          </Route>
+          <Route path="/" component={Page}></Route>
         </Switch>
       </Router>
     </div>

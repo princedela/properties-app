@@ -4,13 +4,11 @@ import Banner from "../Widgets/Banner/Banner";
 import Navbar from "../Widgets/Navbar/Navbar";
 import "./ads.css";
 import TextField from "../FormControls/TextField";
-import ScrollToTop from "../Widgets/ScrollToTop/ScrollToTop";
-import MobileTabs from "../Widgets/MobileTabs/MobileTabs";
 export default function Ads() {
   const [search, setSearch] = useState("");
 
   return (
-    <div>
+    <>
       <div className="mob-search">
         <div className="search-box">
           <TextField
@@ -32,11 +30,8 @@ export default function Ads() {
         <div className="ads-container">
           <div className="filter-card uk-card uk-card-default"></div>
           <AdList />
-          
         </div>
       </div>
-      <MobileTabs />
-      <ScrollToTop />
-    </div>
+    </>
   );
 }

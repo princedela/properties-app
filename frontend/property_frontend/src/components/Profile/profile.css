@@ -1,0 +1,18 @@
+.banner {
+  position: relative;
+}
+.profile {
+  min-height: 100vh;
+  background-color: white;
+}
+.profile-ministats {
+  padding: 20px;
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+}
+
+.profile-name {
+  font-weight: 600;
+  font-size: 0.8rem;
+}

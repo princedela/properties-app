@@ -13,7 +13,7 @@
   background-color: white;
   transition-property: bottom;
   transition-duration: 0.8s;
-  /* display: none; */
+  display: none;
 }
 .mobile-tabs.visible {
   bottom: 0px;
@@ -39,4 +39,10 @@
 .tab-item.active,
 .tab-item.active .icon {
   color: #cd730c;
+}
+
+@media screen and (max-width: 900px) {
+  .mobile-tabs {
+    display: flex;
+  }
 }

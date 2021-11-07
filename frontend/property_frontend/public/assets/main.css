@@ -47,6 +47,9 @@
 .mob-search .search {
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
+.page {
+  padding-bottom: 60px;
+}
 @media only screen and (max-width: 900px) {
 }
 

@@ -11,7 +11,7 @@ const Navbar = () => {
         </h6>
         <ul className="nav-menu">
           <li className="nav-item">
-            <Link to={"/create-ad"}>Create an Ad</Link>
+            <Link to={"/create-ad"}>Create an Aaad</Link>
           </li>
           <li className="nav-item">
             <Link to={"/account"}>My Account</Link>
