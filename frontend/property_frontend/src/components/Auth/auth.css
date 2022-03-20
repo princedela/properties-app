@@ -18,7 +18,8 @@
   padding: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 .form-flex {
   display: flex;
@@ -32,15 +33,17 @@
 }
 a,
 a:visited {
-  color: #cd730c;
+  color: var(--primary-color);
   text-decoration: underline;
   font-weight: 500;
 }
 p.copyright {
-  color: #cd730c;
+  color: var(--primary-color);
   text-align: center;
   font-weight: 600;
   font-size: 0.8rem;
+  /* position: absolute; */
+  /* bottom: 20px; */
 }
 p.form-title {
   color: #9a9999;
@@ -71,12 +74,17 @@ p.form-title {
 .login-input::placeholder {
   text-transform: uppercase;
 }
+.login-input:focus {
+  outline: 1px solid var(--primary-color);
+  background-color: white;
+  color: black;
+}
 
 .login-button {
-  background-color: #cd730c;
+  background-color: var(--primary-color);
   width: 100%;
   border: none;
-  height: 30px;
+  height: 35px;
   color: white;
   text-transform: uppercase;
   margin-bottom: 15px;
@@ -99,7 +107,7 @@ p.form-title {
   }
   p.form-title {
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
   .login {
     background-size: cover;

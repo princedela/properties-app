@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./mobile-tabs.css";
 import { FaChartLine } from "react-icons/fa";
-import { IoMdHome } from "react-icons/io";
 import {
-  MdOutlineAddchart,
   MdOutlineAddBusiness,
   MdOutlineManageAccounts,
   MdOutlineHome,
@@ -19,7 +17,7 @@ export default function MobileTabs() {
   });
 
   const history = useHistory();
-  const pages = ["/", "/", "/", "/", "/profile"];
+  const pages = ["/", "/create-ads", "/", "/", "/profile"];
   function onClickTab(id: number) {
     setTabsState((currVal) => ({ ...currVal, activeTab: id }));
     history.push(pages[id]);

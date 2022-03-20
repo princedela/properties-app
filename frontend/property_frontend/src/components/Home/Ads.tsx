@@ -4,6 +4,7 @@ import Banner from "../Widgets/Banner/Banner";
 import Navbar from "../Widgets/Navbar/Navbar";
 import "./ads.css";
 import TextField from "../FormControls/TextField";
+import FilterBox from "../Widgets/FilterBox/FilterBox";
 export default function Ads() {
   const [search, setSearch] = useState("");
 
@@ -28,8 +29,8 @@ export default function Ads() {
       <Banner />
       <div className="container">
         <div className="ads-container">
-          <div className="filter-card uk-card uk-card-default"></div>
           <AdList />
+          <FilterBox />
         </div>
       </div>
     </>

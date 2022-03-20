@@ -1,0 +1,61 @@
+.cbx label {
+  display: block;
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.cbx label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.cbx-widget {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  border: 1px solid var(--primary-color);
+}
+
+.cbx label:hover input ~ .cbx-widget {
+  background-color: var(--primary-color);
+  opacity: 0.7;
+}
+
+.cbx label input:checked ~ .cbx-widget {
+  background-color: var(--primary-color);
+}
+
+.cbx-widget:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.cbx label input:checked ~ .cbx-widget:after {
+  display: block;
+}
+
+.cbx label .cbx-widget:after {
+  left: 3.4px;
+  top: 0.7px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

@@ -1,6 +1,6 @@
 .navbar {
-  height: 60px;
-  background-color: #cd730c;
+  height: 50px;
+  background-color: var(--primary-color);
   color: white;
 }
 
@@ -23,7 +23,7 @@
 .nav-item a:visited {
   color: white;
   text-decoration: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 700;
   font-size: 0.85rem;
 }
@@ -41,6 +41,10 @@
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   cursor: pointer;
+  display: none;
+}
+
+.nav-hamburger {
   display: none;
 }
 
@@ -112,8 +116,81 @@ h6 span {
   font-weight: 200;
 }
 
+.nav-item.parent {
+  position: relative;
+}
+.nav-children {
+  display: none;
+}
+
+.nav-item.parent.active .parent-link {
+  background-color: whitesmoke;
+  color: var(--primary-color);
+}
+
+.nav-child {
+  padding: 2px 10px;
+  width: 100%;
+}
+.parent-link {
+  border-radius: 6px 6px 0 0;
+  box-sizing: border-box;
+}
+.iconed .icon {
+  height: 20px;
+  margin: 0 5px;
+}
+
+.nav-children {
+  padding: 10px 10px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background-color: white;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+  flex-direction: column;
+  list-style: none;
+  border-radius: 8px;
+}
+.nav-children li {
+  list-style: none;
+  display: block;
+  box-sizing: border-box;
+  color: var(--primary-color);
+}
+
+.nav-children li:hover {
+  background-color: #ebebeb;
+}
+.nav-child a,
+.nav-child a:visited {
+  color: var(--primary-color);
+  white-space: nowrap;
+}
+
+.nav-children li:hover a {
+  color: rgb(32, 32, 32);
+}
+@keyframes fade-up {
+  from {
+    top: 100px;
+    opacity: 0;
+  }
+  to {
+    top: 100%;
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 900px) {
-  .mobile-menu-link {
+  .mobile-menu-link,
+  .nav-hamburger {
     display: block;
   }
   .nav-menu {

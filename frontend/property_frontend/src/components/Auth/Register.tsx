@@ -1,18 +1,21 @@
 import "./auth.css";
 import React, { useState } from "react";
 import TextField from "../FormControls/TextField";
-export default function Register({}) {
+export default function Register() {
   const [form, setForm] = useState({
     username: "",
     password: "",
     password2: "",
   });
   function onInputChange(e: React.FormEvent<HTMLInputElement>) {
+    const val = e.currentTarget.value;
+    const key = e.currentTarget.name;
     setForm((currForm) => ({
       ...currForm,
-      [e.currentTarget.name]: e.currentTarget.value,
+      [key]: val,
     }));
   }
+
   return (
     <div className="login">
       <div className="login-container">

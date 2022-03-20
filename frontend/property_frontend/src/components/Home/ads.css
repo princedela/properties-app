@@ -14,7 +14,7 @@ input.search {
 }
 
 button.icon-btn {
-  background-color: #cd730c;
+  background-color: var(--primary-color);
   height: 34px;
   width: 34px;
   display: flex;
@@ -32,23 +32,25 @@ button.icon-btn img {
   display: flex;
   padding: 15px;
   box-sizing: border-box;
+  align-items: flex-start;
 }
 
 .filter-card {
   width: 260px;
-  height: 400px;
+  min-height: 400px;
   position: sticky;
+  flex-basis: fit-content;
 }
 
 @media screen and (max-width: 700px) {
   input.search {
     height: 40px;
     width: 250px;
-    border: #cd730c;
+    border: var(--primary-color);
   }
 
   button.icon-btn {
-    background-color: #cd730c;
+    background-color: var(--primary-color);
     height: 40px;
     width: 40px;
     display: flex;

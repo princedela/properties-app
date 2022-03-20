@@ -61,3 +61,7 @@
     background-size: cover;
   }
 }
+
+.padded {
+  padding: 20px;
+}

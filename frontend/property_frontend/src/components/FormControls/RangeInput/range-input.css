@@ -1,0 +1,21 @@
+.range-input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.range-input input {
+  text-align: center;
+  height: 30px;
+  width: 42%;
+  border: 1px solid rgb(46, 45, 45, 0.3);
+  border-radius: 0;
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 
+.range-input label {
+  text-align: center;
+} */

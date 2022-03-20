@@ -18,6 +18,7 @@
 .banner-overlay p {
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 .profile .user-img {
   position: absolute;

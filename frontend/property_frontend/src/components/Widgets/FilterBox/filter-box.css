@@ -1,0 +1,39 @@
+.filter-card {
+  margin-top: 15px;
+  padding-top: 5px;
+}
+
+.filter-card .title {
+  text-align: center;
+  opacity: 0.6;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(80, 80, 80, 0.1);
+}
+.filter-card .title p {
+  margin: 3px;
+  font-size: 0.8rem;
+}
+
+.filter-card select {
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid #ebebeb88;
+  height: 30px;
+  background-color: #ebebeb;
+  color: rgb(97, 97, 97);
+}
+.filter-card select:focus {
+  background-color: transparent;
+}
+.filter-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+/* .filter-card label {
+  text-align: center;
+  display: block;
+  margin-bottom: 4px;
+} */

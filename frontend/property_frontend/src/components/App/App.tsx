@@ -6,6 +6,25 @@ import Register from "../Auth/Register";
 import Page from "../Page/Page";
 
 function App() {
+  if (navigator.serviceWorker) {
+    navigator.serviceWorker
+      .register("/workers/updateServiceWorker.js")
+      .then(function (registration) {
+        registration.addEventListener("updatefound", function () {
+          console.log("updfound");
+          registration.installing?.addEventListener(
+            "statechange",
+            function (e) {
+              console.log("e", e);
+            }
+          );
+        });
+        // }
+      })
+      .catch(function (err) {
+        console.log("ServiceWorker registration failed: ", err);
+      });
+  }
   return (
     <div className="app">
       <Router>

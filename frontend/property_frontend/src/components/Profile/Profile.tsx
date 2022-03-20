@@ -7,7 +7,7 @@ export default function Profile() {
       <Navbar />
       <ProfileBanner />
       <div className="profile-ministats uk-card uk-card-default">
-        <p className="profile-name"></p>
+        <p className="profile-name">John Doe</p>
       </div>
     </div>
   );

@@ -2,3 +2,19 @@
   font-family: "Heebo", sans-serif;
   font-size: 0.9rem;
 }
+
+:root {
+  --primary-color: purple;
+  /* --primary-color: #cd730c; */
+  --secondary-lite: #ebebeb;
+  --secondary-color: #1bc58e;
+}
+
+.flexy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flexy > * {
+  flex: 1;
+}

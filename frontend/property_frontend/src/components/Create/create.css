@@ -1,0 +1,92 @@
+.progress-steps {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.progress-steps li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-lite);
+  height: 40px;
+  font-weight: 600;
+  /* font-size: 1.2rem; */
+  gap: 10px;
+}
+.progress-steps .pass {
+  color: white;
+  background-color: var(--secondary-color);
+  position: relative;
+}
+
+.progress-steps .active::before {
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border: 15px transparent solid;
+  border-top: 15px solid var(--secondary-color);
+  top: 100%;
+}
+
+.form-items {
+  margin: 20px 0;
+  /* padding: 0 20px; */
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 20px;
+}
+
+.ad-form {
+  --input-height: 38px;
+  padding: 20px;
+  background-color: var(--secondary-lite);
+  min-height: 100%;
+  border: 1px solid var(--secondary-color);
+}
+
+.ad-form .form-title {
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+  line-height: 1.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.ad-form input,
+.ad-form select {
+  height: var(--input-height);
+}
+.ad-form textarea {
+  padding: 10px;
+  resize: none;
+}
+.ad-form input,
+.ad-form textarea,
+.ad-form select {
+  border: none;
+  width: 100%;
+  padding-left: 10px;
+  display: block;
+}
+
+.ad-form input:focus,
+.ad-form textarea:focus,
+.ad-form select:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+.ad-form .save-btn {
+  background-color: var(--secondary-color);
+  border: none;
+  color: white;
+  height: var(--input-height);
+}
