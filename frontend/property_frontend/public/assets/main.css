@@ -1,7 +1,16 @@
+@font-face {
+  font-family: inconsolata;
+  src: url("/assets/fonts/inconsolata/inconsolata_variable.ttf");
+}
+@font-face {
+  font-family: signika;
+  src: url("/assets/fonts/signika/signika.ttf");
+}
 *,
 *::before,
 *::after {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: signika, inconsolata, "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
   box-sizing: border-box;
 }
 * {
@@ -49,6 +58,7 @@
 }
 .page {
   padding-bottom: 60px;
+  position: relative;
 }
 @media only screen and (max-width: 900px) {
 }

@@ -3,7 +3,7 @@ import dummy from "../../../dummy";
 import SelectList from "../../FormControls/SelectList/SelectList";
 import TextArea from "../../FormControls/TextArea";
 import TextField from "../../FormControls/TextField";
-export default function () {
+export default function ({ onSubmit = () => {} }) {
   const [formState, setFormState] = useState(dummy.states.generalForm);
 
   function onUpdateForm(
@@ -20,7 +20,12 @@ export default function () {
   }
 
   return (
-    <form>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        onSubmit();
+      }}
+    >
       <p className="form-title">General Information</p>
       <div className="form-items">
         <SelectList
@@ -59,7 +64,7 @@ export default function () {
             name="price"
           />
           <SelectList
-            placeholder="Duration"
+            // placeholder="Duration"
             options={dummy.payPeriods}
             value={formState.payPeriod}
             onchange={onUpdateForm}

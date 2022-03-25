@@ -1,6 +1,6 @@
 .mobile-tabs {
   background-color: white;
-  border-top: rgba(0, 0, 0, 0.3) 1px solid;
+  border-top: rgba(0, 0, 0, 0.1) 1px solid;
   height: 60px;
   width: 100%;
   position: fixed;
@@ -38,12 +38,18 @@
 .mobile-tabs .icon:hover,
 .tab-item.active,
 .tab-item.active .icon {
-  color: #cd730c;
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 900px) {
   .mobile-tabs {
     display: flex;
     bottom: 0px;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  .mobile-tabs {
+    display: none;
   }
 }
