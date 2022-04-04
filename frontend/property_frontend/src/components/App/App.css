@@ -3,10 +3,13 @@
 }
 
 :root {
-  --primary-color: purple;
-  --primary-color: #cd730c;
-  --secondary-lite: #ebebeb;
+   --primary-color: #cd730c;
+  /* --primary-color: #983628; */
+  /* --primary-color: #034c3c; */
+  --secondary-lite: rgb(235, 235, 235);
   --secondary-color: #1bc58e;
+  --third-level-color: #983628;
+  --secondary-lite-transparent: rgba(235, 235, 235, 0.4);
 }
 
 .flexy {

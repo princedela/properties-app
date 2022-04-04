@@ -1,21 +1,22 @@
 .ad-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
   padding: 15px;
   justify-content: center;
 }
 
 .ad-mini {
   width: 600px;
-  height: 150px;
+  /* height: 200px; */
   display: flex;
   position: relative;
+  cursor: pointer;
 }
 
 .ad-mini > .img-sec {
-  height: 100%;
-  width: 40%;
+  /* height: 100%; */
+  flex: 2;
   overflow: hidden;
   position: relative;
   background-position: center;
@@ -44,14 +45,17 @@
 .ad-mini .details {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  /* gap: 5px; */
   padding: 0 6px;
   box-sizing: border-box;
   position: relative;
+  width: 100%;
+  flex: 3;
+  padding-bottom: 26px;
 }
 
 .ad-mini .details p {
-  margin: 2px 0;
+  margin: 0;
 }
 
 .ad-mini .location {
@@ -60,8 +64,12 @@
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
-.ad-mini .description {
-  margin: 0;
+.ad-mini p.description {
+  margin: 10px 5px 20px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.8rem;
 }
 .ad-mini .time {
   position: absolute;
@@ -79,14 +87,18 @@
   display: flex;
 }
 
+.ad-mini a,
+.ad-mini a:visited,
+.ad-mini a:hover {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 700px) {
   .ad-mini {
     width: 100%;
-    height: 150px;
     display: flex;
   }
   .ad-mini > .img-sec {
     height: 100%;
-    width: 200px;
   }
 }

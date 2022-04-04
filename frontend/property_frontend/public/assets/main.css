@@ -13,8 +13,8 @@
     sans-serif;
   box-sizing: border-box;
 }
-* {
-  font-size: 1rem;
+:root {
+  font-size: 18px;
 }
 .login {
   background: url("/assets/images/realestate.png");
@@ -64,11 +64,11 @@
 }
 
 @media only screen and (max-width: 700px) {
-  * {
-    font-size: 0.85rem;
-  }
   .banner {
     background-size: cover;
+  }
+  :root {
+    font-size: 16px;
   }
 }
 

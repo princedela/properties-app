@@ -1,7 +1,9 @@
 import React from "react";
+import dummy from "../../../dummy";
 import CheckBoxInput from "../../FormControls/CheckBoxInput/CheckBoxInput";
 import RadioButtonGroup from "../../FormControls/RadioButtonGroup/RadioButtonGroup";
 import RangeInput from "../../FormControls/RangeInput/RangeInput";
+import SelectList from "../../FormControls/SelectList/SelectList";
 import "./filter-box.css";
 export default function FilterBox() {
   return (
@@ -12,23 +14,11 @@ export default function FilterBox() {
       <div className="filter-body">
         <div className="form-control">
           <label>Category</label>
-          <select>
-            <option>All</option>
-            <option>Boom</option>
-            <option>Boom</option>
-            <option>Boom</option>
-            <option>Boom</option>
-          </select>
+          <SelectList options={dummy.listingCategories} />
         </div>
         <div className="form-control">
           <label>Listing type</label>
-          <select>
-            <option>All</option>
-            <option>Boom</option>
-            <option>Boom</option>
-            <option>Boom</option>
-            <option>Boom</option>
-          </select>
+          <SelectList options={dummy.listingTypes} />
         </div>
         <div className="form-control">
           <label>Region</label>

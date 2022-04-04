@@ -46,9 +46,11 @@
 .ad-form {
   --input-height: 38px;
   padding: 20px;
-  background-color: var(--secondary-lite);
+  background-color: var(--secondary-lite-transparent);
   min-height: 100%;
-  border: 1px solid var(--secondary-color);
+  border: 0.6px solid var(--secondary-color);
+  /* -webkit-box-shadow: 1px 0px 33px -14px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 0px 33px -14px rgba(0, 0, 0, 0.3); */
 }
 
 .ad-form .form-title {
@@ -76,12 +78,13 @@
   width: 100%;
   padding-left: 10px;
   display: block;
+  background-color: white;
 }
 
 .ad-form input:focus,
 .ad-form textarea:focus,
 .ad-form select:focus {
-  outline: 2px solid var(--primary-color);
+  outline: 1px solid var(--primary-color);
 }
 
 .ad-form .save-btn {

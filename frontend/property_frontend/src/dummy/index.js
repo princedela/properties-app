@@ -42,6 +42,260 @@ const dummy = {
       { name: "Extra", id: 4 },
     ],
   },
+  ads: [
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+    {
+      location: "East Legon",
+      description: `Four Bedroom house with spacious attic and Four Bedroom house with
+          spacious attic and Four Bedroom house with spacious attic and Four
+          Bedroom house with spacious attic and Four Bedroom house with spacious
+          attic and`,
+      price: "GHC 3000 / month",
+      age: "1 week",
+      imageUrl: "/assets/images/house-listing.png",
+      type: "House",
+      category: "For sale",
+    },
+  ],
 };
 
 export default dummy;

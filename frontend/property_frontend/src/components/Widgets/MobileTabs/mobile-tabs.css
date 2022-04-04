@@ -14,6 +14,8 @@
   transition-property: bottom;
   transition-duration: 0.8s;
   display: none;
+  -webkit-box-shadow: -5px 8px 33px -14px #000000;
+  box-shadow: -5px 8px 33px -14px #000000;
 }
 .mobile-tabs.visible {
   bottom: 0px;
@@ -38,7 +40,7 @@
 .mobile-tabs .icon:hover,
 .tab-item.active,
 .tab-item.active .icon {
-  color: var(--primary-color);
+  color: var(--third-level-color);
 }
 
 @media screen and (max-width: 900px) {

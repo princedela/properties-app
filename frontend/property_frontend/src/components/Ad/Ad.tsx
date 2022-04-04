@@ -1,8 +1,16 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import dummy from "../../dummy";
 import utils from "../../utils";
-
-export default function Ad() {
+const descriptionMaxLength = 160;
+export default function Ad({
+  imageUrl,
+  type,
+  category,
+  location,
+  description,
+  price,
+}: Ad) {
   useEffect(() => {
     utils.toggleMobileSearch();
   }, []);
@@ -11,20 +19,21 @@ export default function Ad() {
       <div
         className="img-sec"
         style={{
-          backgroundImage: "url(/assets/images/house-listing.png)",
+          backgroundImage: `url(${imageUrl})`,
         }}
       >
-        <p>House</p>
-        <p>For sale</p>
+        <p>{type}</p>
+        <p>{category}</p>
       </div>
       <div className="details">
-        <p className="location">East Legon</p>
+        <p className="location">{location}</p>
         <p className="description">
-          Four Bedroom house with spacious attic and very ...
+          {description.substring(0, descriptionMaxLength)}{" "}
+          {description.length > descriptionMaxLength && "..."}
         </p>
-        <Link to="#">GHC 3000 / month</Link>
-        <Link to="#">Read more</Link>
-        <span className="time">1 week</span>
+
+        <Link to="#">{price}</Link>
+        <span className="time"></span>
         <section className="badges">
           <span>
             <img src="/assets/svg/bed.svg" alt="BEDS" />{" "}
@@ -42,4 +51,14 @@ export default function Ad() {
       </div>
     </div>
   );
+}
+
+interface Ad {
+  imageUrl: string;
+  type: string;
+  category: string;
+  location: string;
+  description: string;
+  price: string;
+  age: string;
 }
