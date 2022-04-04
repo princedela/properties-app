@@ -1,0 +1,77 @@
+@font-face {
+  font-family: inconsolata;
+  src: url("/assets/fonts/inconsolata/inconsolata_variable.ttf");
+}
+@font-face {
+  font-family: signika;
+  src: url("/assets/fonts/signika/signika.ttf");
+}
+*,
+*::before,
+*::after {
+  font-family: signika, inconsolata, "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 18px;
+}
+.login {
+  background: url("/assets/images/realestate.png");
+  background-size: cover;
+  background-position: left;
+}
+
+.banner {
+  background: url("/assets/images/realestate.png");
+  background-position: center;
+  background-size: 100% 300%;
+  background-repeat: no-repeat;
+}
+
+.search-box {
+  display: flex;
+  gap: 0;
+}
+.mob-search {
+  /* position: absolute; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background-color: #ebebeb;
+  top: -100px;
+  transition-property: top;
+  transition-duration: 0.6s;
+  position: fixed;
+  z-index: 500;
+}
+.search-box .search-box {
+  width: fit-content;
+}
+.mob-search.visible {
+  top: 0px;
+}
+.mob-search .search {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.page {
+  padding-bottom: 60px;
+  position: relative;
+}
+@media only screen and (max-width: 900px) {
+}
+
+@media only screen and (max-width: 700px) {
+  .banner {
+    background-size: cover;
+  }
+  :root {
+    font-size: 16px;
+  }
+}
+
+.padded {
+  padding: 20px;
+}
