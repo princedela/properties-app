@@ -93,3 +93,86 @@
   color: white;
   height: var(--input-height);
 }
+
+.images-box {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: repeat(2, 150px);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.img-preview {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.img-preview:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.img-preview.main {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.images-form .form-items {
+  max-width: 100%;
+}
+
+.img-preview .change-button {
+  height: 30px;
+  width: 30px;
+  background: none;
+  background-image: url("/public/assets/images/plus.png");
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  border: none;
+}
+
+.img-preview input {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .images-box {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .img-preview::before {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .images-box {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(2, 80px);
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .img-preview::before {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .images-box {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(4, 80px);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

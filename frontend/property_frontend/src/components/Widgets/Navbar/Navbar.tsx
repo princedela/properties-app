@@ -2,13 +2,14 @@ import { Link } from "react-router-dom";
 import "./navbar.css";
 import { FaChartLine, FaUser } from "react-icons/fa";
 import { MdOutlineManageAccounts } from "react-icons/md";
+import { useEffect } from "react";
 const Navbar = () => {
   return (
     <header className="navbar">
       <div className="container nav-container">
         <Link to={"/"}>
           <h6>
-            RentApp<span>Logo</span>
+            <span>Shelta</span>
           </h6>
         </Link>
 
@@ -16,7 +17,7 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to={"/"}>Home</Link>
           </li>
-          <li className="nav-item parent iconed active">
+          <li className="nav-item parent iconed">
             <Link to={"#!"} className="parent-link">
               <FaChartLine className="icon" />
             </Link>
@@ -40,10 +41,20 @@ const Navbar = () => {
             </ul>
           </li>
 
-          <li className="nav-item iconed">
+          <li className="nav-item parent iconed">
             <Link to={"/profile"}>
               <FaUser className="icon" />
             </Link>
+
+            <ul className="nav-children">
+              <li className="nav-child">
+                <Link to={"/login"}>Login</Link>
+              </li>
+
+              <li className="nav-child">
+                <Link to={"/register"}>Register</Link>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>

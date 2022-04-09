@@ -29,8 +29,9 @@ export default function Create() {
       <Navbar />
       <div className="container padded">
         <ul className="progress-steps">
-          {formSteps.map(({ name, id }) => (
+          {formSteps.map(({ name, id }, key) => (
             <li
+              key={key}
               className={
                 (selectedId >= id ? "pass" : "") +
                 (selectedId === id ? " active" : "")

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import dummy from "../../dummy";
 import utils from "../../utils";
-const descriptionMaxLength = 160;
+const descriptionMaxLength = 120;
 export default function Ad({
   imageUrl,
   type,
@@ -10,6 +10,7 @@ export default function Ad({
   location,
   description,
   price,
+  age,
 }: Ad) {
   useEffect(() => {
     utils.toggleMobileSearch();
@@ -32,8 +33,10 @@ export default function Ad({
           {description.length > descriptionMaxLength && "..."}
         </p>
 
-        <Link to="#">{price}</Link>
-        <span className="time"></span>
+        <Link className="price" to="#">
+          {price}
+        </Link>
+        <span className="time">{age}</span>
         <section className="badges">
           <span>
             <img src="/assets/svg/bed.svg" alt="BEDS" />{" "}

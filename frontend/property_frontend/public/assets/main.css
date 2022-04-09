@@ -6,11 +6,15 @@
   font-family: signika;
   src: url("/assets/fonts/signika/signika.ttf");
 }
+@font-face {
+  font-family: assistant;
+  src: url("/assets/fonts/assistant-v.ttf");
+}
 *,
 *::before,
 *::after {
-  font-family: signika, inconsolata, "Segoe UI", Tahoma, Geneva, Verdana,
-    sans-serif;
+  font-family: assistant, signika, inconsolata, "Segoe UI", Tahoma, Geneva,
+    Verdana, sans-serif;
   box-sizing: border-box;
 }
 :root {
@@ -67,9 +71,9 @@
   .banner {
     background-size: cover;
   }
-  :root {
+  /* :root {
     font-size: 16px;
-  }
+  } */
 }
 
 .padded {

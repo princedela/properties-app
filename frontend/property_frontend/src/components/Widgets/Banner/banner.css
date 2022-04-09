@@ -37,16 +37,19 @@
 
 @media only screen and (max-width: 700px) {
   .banner-overlay {
-    gap: 6px;
+    gap: 4px;
   }
   .banner-overlay p {
-    margin: 3px 7px;
+    font-size: 0.9rem;
+    letter-spacing: 0.4px;
     text-transform: none;
+    line-height: 24px;
   }
   .banner .search-box {
     position: sticky;
+    margin-top: 20px;
   }
   .banner {
-    height: 22vh;
+    height: 25vh;
   }
 }
