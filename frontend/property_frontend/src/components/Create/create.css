@@ -46,9 +46,9 @@
 .ad-form {
   --input-height: 38px;
   padding: 20px;
-  background-color: var(--secondary-lite-transparent);
+  background-color: var(--secondary-lite);
   min-height: 100%;
-  border: 0.6px solid var(--secondary-color);
+  /* border: 0.6px solid var(--secondary-color); */
   /* -webkit-box-shadow: 1px 0px 33px -14px rgba(0, 0, 0, 0.3);
   box-shadow: 1px 0px 33px -14px rgba(0, 0, 0, 0.3); */
 }
@@ -59,7 +59,7 @@
   font-weight: bold;
   text-decoration: underline;
   line-height: 1.2rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   margin-bottom: 20px;
 }
 
@@ -106,6 +106,8 @@
   width: 100%;
   position: relative;
   background-color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border-radius: 3px;
 }
 
 .img-preview:hover {
@@ -128,13 +130,22 @@
   width: 30px;
   background: none;
   background-image: url("/public/assets/images/plus.png");
-  background-size: contain;
+  background-size: 30px 30px;
+  background-position: center;
+  background-repeat: no-repeat;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
   border: none;
+}
+
+.img-preview.has-image .change-button {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  padding: 25px;
+  box-sizing: border-box;
 }
 
 .img-preview input {
@@ -154,6 +165,18 @@
   }
 }
 
+.img-preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transform: scale(1);
+}
+.img-preview img:hover {
+  transform: scale(1.2);
+}
 @media screen and (max-width: 650px) {
   .images-box {
     display: grid;
@@ -162,9 +185,17 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .img-preview::before {
+  .img-preview .change-button {
     height: 20px;
     width: 20px;
+    background-size: 20px 20px;
+  }
+
+  .img-preview.has-image .change-button {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    padding: 25px;
+    box-sizing: border-box;
   }
 }
 

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { MouseEventHandler, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import dummy from "../../dummy";
 import utils from "../../utils";
@@ -11,12 +11,13 @@ export default function Ad({
   description,
   price,
   age,
+  onClick,
 }: Ad) {
   useEffect(() => {
     utils.toggleMobileSearch();
   }, []);
   return (
-    <div className="ad-mini uk-card uk-card-default">
+    <div className="ad-mini uk-card uk-card-default" onClick={onClick}>
       <div
         className="img-sec"
         style={{
@@ -64,4 +65,5 @@ interface Ad {
   description: string;
   price: string;
   age: string;
+  onClick: MouseEventHandler<Element>;
 }

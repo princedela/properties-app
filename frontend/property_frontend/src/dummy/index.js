@@ -37,7 +37,7 @@ const dummy = {
   tabs: {
     createFormSteps: [
       { name: "General", id: 1 },
-      { name: "Images", id: 2 },
+      { name: "Image", id: 2 },
       { name: "Location", id: 3 },
       { name: "Extra", id: 4 },
     ],
