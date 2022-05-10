@@ -77,3 +77,14 @@
   flex-direction: column;
   gap: 32px;
 }
+
+@media screen and (max-width: 800px) {
+  .listing-body .extras {
+    flex-direction: column;
+  }
+  .listing-body .skus {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

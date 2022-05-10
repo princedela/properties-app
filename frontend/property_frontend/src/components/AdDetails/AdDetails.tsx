@@ -6,6 +6,7 @@ import Banner from "../Widgets/Banner/Banner";
 import Navbar from "../Widgets/Navbar/Navbar";
 import "./ad-details.css";
 import GoogleMapReact from "google-map-react";
+import RelatedAds from "../RelatedAds/RelatedAds";
 
 export default function AdDetails(props: AdDetailsProps) {
   const defaultAd: any = {};
@@ -98,6 +99,7 @@ export default function AdDetails(props: AdDetailsProps) {
                   </tbody>
                 </table>
               </section>
+              <hr />
             </section>
             <section className="map">
               <GoogleMapReact
@@ -111,6 +113,8 @@ export default function AdDetails(props: AdDetailsProps) {
           </div>
           <hr />
         </section>
+
+        <RelatedAds />
       </div>
     </div>
   );

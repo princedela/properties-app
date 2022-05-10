@@ -1,0 +1,4 @@
+.related .listings {
+  display: flex;
+  gap: 10px;
+}
