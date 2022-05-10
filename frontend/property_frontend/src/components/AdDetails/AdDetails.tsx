@@ -32,82 +32,89 @@ export default function AdDetails(props: AdDetailsProps) {
           <h5>{ad.price}</h5>
           <h5>{ad.description}</h5>
           <hr />
-          <section className="listing-location">
-            <table>
-              <tbody>
-                <tr>
-                  <td>Region</td>
-                  <td>
-                    <b>{ad.region}</b>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Location</td>
-                  <td>
-                    <b>{ad.location}</b>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <hr />
-          <section className="utils">
-            <table>
-              <tbody>
-                <tr>
-                  <td className="util-icon">
-                    <img src="/assets/svg/bed.svg" alt="BEDS" />
-                  </td>
-                  <td>
-                    <span>Bedrooms</span>
-                  </td>
-                  <td>
-                    <span className="val">{Math.ceil(Math.random() * 10)}</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="util-icon">
-                    <img src="/assets/svg/bathroom.svg" alt="BATHROOMS" />
-                  </td>
-                  <td>
-                    <span>Bathrooms</span>
-                  </td>
-                  <td>
-                    <span className="val">{Math.ceil(Math.random() * 10)}</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="util-icon">
-                    <img src="/assets/svg/kitchen.svg" alt="KITCHENS" />
-                  </td>
-                  <td>
-                    <span>Kitchens</span>
-                  </td>
-                  <td>
-                    <span className="val">{Math.ceil(Math.random() * 10)}</span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <hr />
-
-          <section className="map">
-            <GoogleMapReact
-              bootstrapURLKeys={{
-                key: "AIzaSyDIE2bJ5U2LiFUPuuhmq7fAwcj_ousCQWc",
-              }}
-              defaultCenter={{ lat: 5.6119476, lng: -0.2551413 }}
-              defaultZoom={11}
-            ></GoogleMapReact>
-          </section>
+          <div className="extras">
+            <section className="skus">
+              <section className="listing-location">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Region</td>
+                      <td>
+                        <b>{ad.region}</b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Location</td>
+                      <td>
+                        <b>{ad.location}</b>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <hr />
+              <section className="utils">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td className="util-icon">
+                        <img src="/assets/svg/bed.svg" alt="BEDS" />
+                      </td>
+                      <td>
+                        <span>Bedrooms</span>
+                      </td>
+                      <td>
+                        <span className="val">
+                          {Math.ceil(Math.random() * 10)}
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="util-icon">
+                        <img src="/assets/svg/bathroom.svg" alt="BATHROOMS" />
+                      </td>
+                      <td>
+                        <span>Bathrooms</span>
+                      </td>
+                      <td>
+                        <span className="val">
+                          {Math.ceil(Math.random() * 10)}
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="util-icon">
+                        <img src="/assets/svg/kitchen.svg" alt="KITCHENS" />
+                      </td>
+                      <td>
+                        <span>Kitchens</span>
+                      </td>
+                      <td>
+                        <span className="val">
+                          {Math.ceil(Math.random() * 10)}
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+            </section>
+            <section className="map">
+              <GoogleMapReact
+                bootstrapURLKeys={{
+                  key: "AIzaSyDIE2bJ5U2LiFUPuuhmq7fAwcj_ousCQWc",
+                }}
+                defaultCenter={{ lat: 5.6119476, lng: -0.2551413 }}
+                defaultZoom={11}
+              ></GoogleMapReact>
+            </section>
+          </div>
           <hr />
         </section>
       </div>
     </div>
   );
 }
-const AnyReactComponent = ({ text = "" }) => <div>{text}</div>;
 
 interface AdDetailsProps extends RouteComponentProps<RouteParams> {}
 interface RouteParams {

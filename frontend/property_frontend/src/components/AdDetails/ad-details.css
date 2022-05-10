@@ -68,3 +68,12 @@
   width: 100%;
   height: 400px;
 }
+
+.listing-body .extras {
+  display: flex;
+}
+.listing-body .skus {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
