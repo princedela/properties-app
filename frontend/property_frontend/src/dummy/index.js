@@ -45,253 +45,274 @@ const dummy = {
   ads: [
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },
     {
       location: "East Legon",
+      region: "Greater Accra",
       description: `Four Bedroom house with spacious attic and Four Bedroom house with
           spacious attic and Four Bedroom house with spacious attic and Four
           Bedroom house with spacious attic and Four Bedroom house with spacious
           attic and`,
       price: "GHC 3000 / month",
       age: "1 week",
-      imageUrl: "/assets/images/house-listing.png",
+      imageUrl: "/assets/images/house-listing.jpg",
       type: "House",
       category: "For sale",
     },

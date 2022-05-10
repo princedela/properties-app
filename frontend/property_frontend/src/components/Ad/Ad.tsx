@@ -2,7 +2,8 @@ import { MouseEventHandler, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import dummy from "../../dummy";
 import utils from "../../utils";
-const descriptionMaxLength = 120;
+import AdInterface from "./AdInterface";
+const descriptionMaxLength = 60;
 export default function Ad({
   imageUrl,
   type,
@@ -12,7 +13,7 @@ export default function Ad({
   price,
   age,
   onClick,
-}: Ad) {
+}: AdInterface) {
   useEffect(() => {
     utils.toggleMobileSearch();
   }, []);
@@ -55,15 +56,4 @@ export default function Ad({
       </div>
     </div>
   );
-}
-
-interface Ad {
-  imageUrl: string;
-  type: string;
-  category: string;
-  location: string;
-  description: string;
-  price: string;
-  age: string;
-  onClick: MouseEventHandler<Element>;
 }

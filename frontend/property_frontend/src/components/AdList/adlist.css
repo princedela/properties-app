@@ -12,7 +12,7 @@
   display: flex;
   position: relative;
   cursor: pointer;
-  gap: 10px;
+  gap: 6px;
 }
 
 .ad-mini > .img-sec {
@@ -74,8 +74,8 @@
 }
 .ad-mini .time {
   position: absolute;
-  right: 10px;
-  bottom: 4px;
+  right: 8px;
+  bottom: 0px;
   /* font-weight: 600; */
   color: #109f0f;
 }
@@ -84,11 +84,11 @@
   position: absolute;
   left: 6px;
   bottom: 0;
-  gap: 12px;
+  gap: 6px;
   display: flex;
 }
 .ad-list .badges img {
-  margin-right: 2px;
+  margin-right: 1px;
 }
 
 .ad-mini a,

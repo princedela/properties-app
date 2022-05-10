@@ -1,0 +1,70 @@
+.listing-image-container {
+  height: 30vh;
+  width: 100%;
+  overflow: hidden;
+  border-left: 2px solid rgb(45, 45, 45);
+  border-right: 2px solid rgb(45, 45, 45);
+}
+.listing-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.listing-body {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.listing-body h4,
+.listing-body h5,
+.listing-body p,
+.listing-body h3 {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.listing-title {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+@media screen and (max-width: 700px) {
+  .listing-body {
+    padding: 10px 16px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* .listing-body .utils {
+  display: grid;
+  font-size: 12px;
+  font-weight: 400;
+  grid-template: auto / repeat(2, 1fr);
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.listing-body .utils > * {
+  display: flex;
+  gap: 4px;
+} */
+
+.utils .val {
+  font-weight: 600;
+}
+
+.utils td {
+  min-width: 100px;
+}
+.utils td.util-icon {
+  min-width: 40px;
+}
+.listing-location td {
+  min-width: 80px;
+}
+
+.listing-body .map {
+  width: 100%;
+  height: 400px;
+}
