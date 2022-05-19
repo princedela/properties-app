@@ -1,7 +1,11 @@
-.container {
+.container,
+.lg-container {
   width: 100%;
   max-width: 900px;
   margin: auto;
+}
+.lg-container {
+  max-width: 1020px;
 }
 body {
   background-color: #f5f5f5c4;

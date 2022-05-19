@@ -7,6 +7,7 @@ type TextFieldProps = {
   classes?: string;
   placeholder?: string;
   name?: string;
+  isBlock?: boolean;
   onchange?: FormEventHandler<HTMLInputElement>;
 };
 export default function TextField({
@@ -16,11 +17,12 @@ export default function TextField({
   classes = "",
   placeholder = "",
   name = "",
+  isBlock = false,
   onchange = () => {},
   ...rest
 }: TextFieldProps) {
   return (
-    <div className="form-control">
+    <div className={`form-control ${isBlock ? "block" : ""}`}>
       {label && <label>{label}</label>}
       <input
         type={type}

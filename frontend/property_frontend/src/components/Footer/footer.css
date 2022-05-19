@@ -1,0 +1,98 @@
+footer {
+  flex-direction: column;
+  padding-top: 40px;
+}
+footer h5 {
+  font-weight: 500;
+}
+footer,
+.top-footer,
+.bottom-footer {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.top-footer {
+  justify-content: space-between;
+}
+.top-footer ul {
+  list-style: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+}
+.top-footer .contact ul {
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+.top-footer li {
+  margin: 0;
+  padding: 0;
+}
+footer a,
+footer a:visited {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+}
+.bottom-footer {
+  align-items: center;
+  justify-content: center;
+}
+
+footer input {
+  border-radius: 6px;
+  padding-left: 12px;
+}
+
+footer .contact a {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .contact img {
+  height: 20px;
+}
+@media screen and (max-width: 800px) {
+  .top-footer {
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    gap: 20px;
+    justify-content: center;
+  }
+  .top-footer > * {
+    flex-basis: 40%;
+    box-sizing: border-box;
+  }
+  .top-footer .contact,
+  .top-footer .alerts-form {
+    flex-basis: 80%;
+  }
+  .top-footer h5 {
+    font-weight: 600;
+  }
+  .top-footer .contact ul {
+    justify-content: left;
+    gap: 20px;
+  }
+
+  footer {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  footer {
+    padding: 20px;
+  }
+}

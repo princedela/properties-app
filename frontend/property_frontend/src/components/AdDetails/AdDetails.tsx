@@ -7,6 +7,8 @@ import Navbar from "../Widgets/Navbar/Navbar";
 import "./ad-details.css";
 import GoogleMapReact from "google-map-react";
 import RelatedAds from "../RelatedAds/RelatedAds";
+import Footer from "../Footer/Footer";
+import { GMapKey } from "../../config/app-config";
 
 export default function AdDetails(props: AdDetailsProps) {
   const defaultAd: any = {};
@@ -21,12 +23,12 @@ export default function AdDetails(props: AdDetailsProps) {
   return (
     <div className="listing-details">
       <Navbar />
-      <div className="container">
+      <div className="lg-container bg-white uk-card uk-card-default">
         <section className="listing-image-container">
           <img src={ad.imageUrl} className="listing-image" />
         </section>
 
-        <section className="listing-body">
+        <section className="container listing-body">
           <h3 className="listing-title">
             {ad.type} {ad.category?.toLowerCase()} at {ad.location}
           </h3>
@@ -104,7 +106,7 @@ export default function AdDetails(props: AdDetailsProps) {
             <section className="map">
               <GoogleMapReact
                 bootstrapURLKeys={{
-                  key: "AIzaSyDIE2bJ5U2LiFUPuuhmq7fAwcj_ousCQWc",
+                  key: GMapKey,
                 }}
                 defaultCenter={{ lat: 5.6119476, lng: -0.2551413 }}
                 defaultZoom={11}
@@ -113,9 +115,9 @@ export default function AdDetails(props: AdDetailsProps) {
           </div>
           <hr />
         </section>
-
         <RelatedAds />
       </div>
+      <Footer />
     </div>
   );
 }

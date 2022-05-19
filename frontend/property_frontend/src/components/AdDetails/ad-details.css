@@ -4,6 +4,7 @@
   overflow: hidden;
   border-left: 2px solid rgb(45, 45, 45);
   border-right: 2px solid rgb(45, 45, 45);
+  margin-top: 20px;
 }
 .listing-image {
   width: 100%;
@@ -12,9 +13,14 @@
 }
 
 .listing-body {
-  padding: 10px 0;
+  padding: 20px;
+  margin: auto;
   display: flex;
   flex-direction: column;
+}
+.listing-details .related {
+  margin: 20px;
+  padding-bottom: 36px;
 }
 .listing-body h4,
 .listing-body h5,
@@ -26,7 +32,9 @@
 
 .listing-title {
   color: var(--primary-color);
-  text-decoration: underline;
+  opacity: 0.8;
+  font-weight: 600;
+  /* text-decoration: underline; */
 }
 @media screen and (max-width: 700px) {
   .listing-body {
@@ -77,6 +85,9 @@
   flex-direction: column;
   gap: 32px;
 }
+/* .listing-image-container {
+  padding: -20px -20px 0;
+} */
 
 @media screen and (max-width: 800px) {
   .listing-body .extras {
